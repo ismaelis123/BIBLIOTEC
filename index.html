@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca Digital</title>
+    <link rel="stylesheet" href="cs/style.css">
+</head>
+<body>
+    <header>
+        <h1>Biblioteca Digital</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Libros</a>
+                    <div class="dropdown-content">
+                        <a href="#" onclick="showSection('secundaria')">Secundaria</a>
+                        <a href="#" onclick="showSection('universidad')">Universidad</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a la Biblioteca Digital</h2>
+            <p>Explora nuestra colección de libros digitales y descubre tu próxima lectura favorita.</p>
+        </section>
+        <section id="secundaria" class="book-section">
+            <h2>Libros de Secundaria</h2>
+            <div class="book-list">
+                <div class="book-item">
+                    <img src="imagenes/Matematica.png" alt="Libro 1">
+                    <h3>MATEMATICA 10mo Grado</h3>
+                    <p><a href="libros/Lmatematicas10mo.pdf" target="_blank">Descargar PDF</a></p>
+                </div>
+                <div class="book-item">
+                    <img src="imagenes/lengua.png" alt="Libro 2">
+                    <h3>LENGUA Y LITERATURA 10mo Grado</h3>
+                    <p><a href="libros/LLenguayliteratura10mo.pdf" target="_blank">Descargar PDF</a></p>
+                </div>
+                <div class="book-item">
+                    <img src="imagenes/ingles.png" alt="Libro 3">
+                    <h3>INGLES 10mo Grado</h3>
+                    <p><a href="libros/LIngles10mo.pdf" target="_blank">Descargar PDF</a></p>
+                </div>
+                <!-- Agrega más libros de secundaria aquí -->
+            </div>
+        </section>
+        <section id="universidad" class="book-section">
+            <h2>Libros de Universidad</h2>
+            <div class="book-list">
+                <div class="book-item">
+                    <img src="imagenes/medicina general.png" alt="Libro 4">
+                    <h3>Medicina General</h3>
+                    <p><a href="libros/medicina general.pdf" target="_blank">Descargar PDF</a></p>
+                </div>
+                <div class="book-item">
+                    <img src="imagenes/bioanalisis.png" alt="Libro 5">
+                    <h3>Bioanalisis</h3>
+                    <p><a href="libros/analisis.pdf" target="_blank">Descargar PDF</a></p>
+                </div>
+                <div class="book-item">
+                    <img src="imagenes/diseño.png" alt="Libro 6">
+                    <h3>Diseño Grafico</h3>
+                    <p><a href="libros/diseno_grafico.pdf" target="_blank">Descargar PDF</a></p>
+                </div>
+                <!-- Agrega más libros de universidad aquí -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Biblioteca Digital</p>
+    </footer>
+    <script src="js/scritps.js"></script>
+</body>
+</html>
